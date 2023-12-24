@@ -1,0 +1,41 @@
+{C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/FinPro/Cutoff_serial.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/FinPro/Cutoff_serial.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Cutoff_serial
+-- Compiling architecture behvaior of Cutoff_serial
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/FinPro/save.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/FinPro/save.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity save
+-- Compiling architecture Behavioral of save
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/FinPro/SerialRX.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/FinPro/SerialRX.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SerialRX
+-- Compiling architecture Behavioral of SerialRX
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/FinPro/save_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/FinPro/save_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity save_tb
+-- Compiling architecture behavior of save_tb
+
+} {} {}}
