@@ -85,3 +85,17 @@ signal Temp_decoded_letter : CHARACTER;
 Temp_decoded_letter <= morse_to_char(Decode_letter_out);
                     Decoded_letter <= Temp_decoded_letter;
                     report "Decoded letter: " & Character'image(Temp_decoded_letter);
+
+
+                    WHEN ADD_STATE =>
+                    IF mode_number =  THEN
+                        Temp_number <= STD_LOGIC_VECTOR(unsigned(A) + unsigned(B));
+                        Decode_number_out <= decode_morse_number(Temp_number);
+                        next_state <= IDLE;
+                    ELSIF mode_number = "001" THEN
+                        Temp_number <= STD_LOGIC_VECTOR(unsigned(A) - unsigned(B));
+                        Decode_number_out <= decode_morse_number(Temp_number);
+                        next_state <= IDLE;
+                    ELSE
+                        Decode_number_out <= "0000000000"; -- 0
+                    END IF;

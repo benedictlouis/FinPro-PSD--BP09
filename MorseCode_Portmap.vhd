@@ -1,11 +1,11 @@
 LIBRARY IEEE;
-USE IEEE.std_logic_1164.ALL;
-USE IEEE.numeric_std.ALL;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 
 USE work.MorseTable.ALL;
 USE work.MorseFunction.ALL;
 
-ENTITY MorseCode IS
+ENTITY MorseCode_Portmap IS
     PORT (
         Clk : IN STD_LOGIC;
         Decode_letter_in : IN STD_LOGIC_VECTOR (7 DOWNTO 0);
@@ -16,14 +16,85 @@ ENTITY MorseCode IS
         Decoded_letter, Encoded_letter : OUT CHARACTER;
         Decode_number_out, Encode_number_out : OUT STD_LOGIC_VECTOR (9 DOWNTO 0)
     );
-END MorseCode;
+END MorseCode_Portmap;
 
-ARCHITECTURE Behavioral OF MorseCode IS
+ARCHITECTURE Behavioral OF MorseCode_Portmap IS
     TYPE morse_state IS (IDLE, DECODE_LETTER, ENCODE_LETTER, DECODE_NUMBER, ENCODE_NUMBER);
     SIGNAL present_state, next_state : morse_state;
     SIGNAL Temp_number, Temp_decode_number, Temp_encode_number : STD_LOGIC_VECTOR(9 DOWNTO 0) := (OTHERS => '0');
     SIGNAL Temp_decode_out, Temp_encode_out : STD_LOGIC_VECTOR(7 DOWNTO 0) := (OTHERS => '0');
+
+    COMPONENT LetterDecoder IS
+        PORT (
+            Clk : IN STD_LOGIC;
+            Decode_letter_in : IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+            D_enable : IN STD_LOGIC;
+            Decode_letter_out : OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
+            Decoded_letter : OUT CHARACTER
+        );
+    END COMPONENT LetterDecoder;
+
+    COMPONENT LetterEncoder IS
+        PORT (
+            Clk : IN STD_LOGIC;
+            Decode_letter_in : IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+            D_enable : IN STD_LOGIC;
+            Decode_letter_out, Encode_letter_out : OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
+            Decoded_letter, Encoded_letter : OUT CHARACTER
+        );
+    END COMPONENT LetterEncoder;
+
+    COMPONENT NumberDecoder IS
+        PORT (
+            Clk : IN STD_LOGIC;
+            Decode_number_in : IN STD_LOGIC_VECTOR (9 DOWNTO 0);
+            D_enable : IN STD_LOGIC;
+            Decode_number_out : OUT STD_LOGIC_VECTOR (9 DOWNTO 0)
+        );
+    END COMPONENT NumberDecoder;
+
+    COMPONENT NumberEncoder IS
+        PORT (
+            Clk : IN STD_LOGIC;
+            Decode_number_in : IN STD_LOGIC_VECTOR (9 DOWNTO 0);
+            D_enable : IN STD_LOGIC;
+            Decode_number_out, Encode_number_out : OUT STD_LOGIC_VECTOR (9 DOWNTO 0)
+        );
+    END COMPONENT NumberEncoder;
+
 BEGIN
+    UUT_LetterDecoder : LetterDecoder PORT MAP(
+        Clk => Clk,
+        Decode_letter_in => Decode_letter_in,
+        D_enable => D_enable,
+        Decode_letter_out => Decode_letter_out,
+        Decoded_letter => Decoded_letter
+    );
+
+    UUT_LetterEncoder : LetterEncoder PORT MAP(
+        Clk => Clk,
+        Decode_letter_in => Decode_letter_in,
+        D_enable => D_enable,
+        Decode_letter_out => Decode_letter_out,
+        Encode_letter_out => Encode_letter_out,
+        Encoded_letter => Encoded_letter
+    );
+
+    UUT_NumberDecoder : NumberDecoder PORT MAP(
+        Clk => Clk,
+        Decode_number_in => Decode_number_in,
+        D_enable => D_enable,
+        Decode_number_out => Decode_number_out
+    );
+
+    UUT_NumberEncoder : NumberEncoder PORT MAP(
+        Clk => Clk,
+        Decode_number_in => Decode_number_in,
+        D_enable => D_enable,
+        Decode_number_out => Decode_number_out,
+        Encode_number_out => Encode_number_out
+    );
+
     PROCESS (
             present_state, 
             Decode_letter_in, 
@@ -48,7 +119,6 @@ BEGIN
                     Decode_letter_out <= Temp_decode_out;
 
                     Temp_decoded_letter := morse_to_char(Temp_decode_out);
-                    Decoded_letter <= Temp_decoded_letter;
 
                     REPORT "Decoded letter: " & CHARACTER'image(Temp_decoded_letter);
 
@@ -63,7 +133,6 @@ BEGIN
                     Encode_letter_out <= Temp_encode_out;
 
                     Temp_encoded_letter := ascii_to_char(Temp_encode_out);
-                    Encoded_letter <= Temp_encoded_letter;
 
                     REPORT "Encoded letter: " & CHARACTER'image(Temp_encoded_letter);
 
@@ -107,7 +176,7 @@ BEGIN
         END IF;
     END PROCESS;
 
-    PROCESS (Clk, next_state)
+    PROCESS (Clk)
     BEGIN
         IF rising_edge(Clk) THEN
             present_state <= next_state;

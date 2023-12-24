@@ -1,0 +1,119 @@
+{C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/NumberDecoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/NumberDecoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity NumberDecoder
+-- Compiling architecture Behavioral of NumberDecoder
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/LetterDecoder_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/LetterDecoder_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity LetterDecoder_tb
+-- Compiling architecture behavior of LetterDecoder_tb
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/LetterEncoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/LetterEncoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity LetterEncoder
+-- Compiling architecture Behavioral of LetterEncoder
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/MorseFunction.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/MorseFunction.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Compiling package MorseFunction
+-- Compiling package body MorseFunction
+-- Loading package MorseFunction
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/NumberDecoder_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/NumberDecoder_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity NumberDecoder_tb
+-- Compiling architecture Behavioral of NumberDecoder_tb
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/NumberEncoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/NumberEncoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity NumberEncoder
+-- Compiling architecture Behavioral of NumberEncoder
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/MorseCode.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/MorseCode.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity MorseCode
+-- Compiling architecture Behavioral of MorseCode
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/LetterEncoder_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/LetterEncoder_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity LetterEncoder_tb
+-- Compiling architecture behavior of LetterEncoder_tb
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/MorseTable.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/MorseTable.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package MorseTable
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/LetterDecoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/LetterDecoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity LetterDecoder
+-- Compiling architecture Behavioral of LetterDecoder
+
+} {} {}} {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/NumberEncoder_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Louis/Documents/Kuliah/Semester 3/PSD/Praktikum/Finpro BP09/NumberEncoder_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MorseTable
+-- Loading package MorseFunction
+-- Compiling entity NumberEncoder_tb
+-- Compiling architecture Behavioral of NumberEncoder_tb
+
+} {} {}}

@@ -11,7 +11,7 @@ PACKAGE MorseFunction IS
     FUNCTION decode_morse_number(number : STD_LOGIC_VECTOR(9 DOWNTO 0)) RETURN STD_LOGIC_VECTOR;
     FUNCTION encode_morse_number(morse : STD_LOGIC_VECTOR(9 DOWNTO 0)) RETURN STD_LOGIC_VECTOR;
     FUNCTION morse_to_char(morse : STD_LOGIC_VECTOR(7 DOWNTO 0)) RETURN CHARACTER;
-    FUNCTION ascii_to_char(ascii : STD_LOGIC_VECTOR(7 DOWNTO 0)) RETURN CHARACTER;
+    FUNCTION ascii_to_char (ascii : STD_LOGIC_VECTOR(7 DOWNTO 0)) RETURN CHARACTER;
 END MorseFunction;
 
 -- Package body
